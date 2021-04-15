@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom properties</title>
+    <!-- CSS 변수 정하기 
+        --xx-xx 형식으로 줄 수 있다 -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/--* -->
+
+    <!-- media query 를 줄 때도 가능 - 태블릿 / 스마트폰 등 일때-->
+    
+    <style>
+        :root {
+            --font-size : 32px;
+            --backgroud-color : thistle;
+            --text-color : whitesmoke;
+            --base-space : 8px;
+        }
+        
+        .first_list {
+            background-color: var(--backgroud-color);
+            color: var(--text-color);
+            margin-left: var(--base-space, 8);
+            font-size : var(--font-size);
+        }
+
+        .second_list {
+            background-color: var(--backgroud-color);
+            color: var(--text-color);
+            font-size: var(--font-size);
+            margin-left: calc(var(--base-space)*2);
+        }
+
+        @media screen and (max-width: 768px) {
+            :root {
+            --backgroud-color : salmon;
+            --text-color : blue;
+            --font-size : 32px;
+            --base-space : 4px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="first_list">
+        <li>Orange</li>
+        <li>Apple</li>
+    </ul>
+    <ul class="second_list">
+        <li>Korea</li>
+        <li>Japan</li>
+        <li>China</li>
+    </ul>
+</body>
+</html>
