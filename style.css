@@ -51,6 +51,14 @@ ul {
   padding-left: 0;
 }
 
+/* removing button's default setting */
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography - 전반적인 패딩, 텍스트에 대해서 스타일*/
 h1 {
   font-size: var(--font-large);
@@ -60,7 +68,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-medium);
+  font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
@@ -84,7 +92,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: #e0bb07;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -112,4 +120,37 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+  background: url("./imgs/nbg2.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+/* .home_avater_container {
+  display: inline;
+  height: 400px;
+} */
+
+.home__avater {
+  height: 270px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
