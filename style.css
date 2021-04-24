@@ -312,6 +312,10 @@ p {
 
 /* Work */
 
+#work {
+  margin-bottom: 40px;
+}
+
 .work__categories {
   margin: 40px;
 }
