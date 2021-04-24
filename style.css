@@ -6,6 +6,7 @@
   --color-dark-white: #bdbdbd;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
+  --color-hot-pink: #f851b5;
   --color-bg-orange: #f85106;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -98,7 +99,7 @@ p {
   justify-content: space-between;
   /* background-color: #e0bb07; */
   /* background-color: #f85106; */
-  background-color: #f851b5;
+  background-color: var(--color-hot-pink);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -163,7 +164,7 @@ p {
 
 /* Section common */
 .section {
-  padding: 50px;
+  padding: 60px;
   text-align: center;
   margin: auto;
 }
@@ -253,10 +254,15 @@ p {
   margin-bottom: 32px;
 }
 
+.section_container h2 {
+  margin-bottom: 18px;
+}
+
 .skillset {
   display: flex;
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
+  margin-top: 40px;
 }
 
 .skillset__title {
@@ -456,7 +462,7 @@ p {
 
 /* Contatc */
 #contact {
-  background-color: var(--color-pink);
+  background-color: rgb(0, 15, 153);
 }
 
 .contact__title,
