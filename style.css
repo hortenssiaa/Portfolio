@@ -30,6 +30,7 @@
 
   /* Size */
   --size-border-radius: 4px;
+  --size-border-radius-circular: 10px;
 
   /* Annimation */
   --annimation-duration: 300ms;
@@ -130,6 +131,10 @@ p {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  background-color: var(--color-bg-orange);
+  color: var(--color-white);
+  padding: 10px 14px;
+  border-radius: var(--size-border-radius-circular);
 }
 
 .navbar__menu__item {
