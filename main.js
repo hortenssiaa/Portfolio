@@ -12,7 +12,6 @@ document.addEventListener('scroll', () => {
 });
 
 
-
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
@@ -28,7 +27,7 @@ navbarMenu.addEventListener('click', (event) => {
 
 // Handle scrolling when tapping on the 'contact me' button
 const contactBtn = document.querySelector('.home__contact');
-contactBtn.addEventListener('click', (event) => {
+contactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
@@ -39,6 +38,25 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - (window.scrollY / homeHeight);
 });
+
+
+
+// Show Arrow-Up button when scrolling down 
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHeight / 2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+
+// Handle click on the 'Arrow-up' button
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
+
 
 
 function scrollIntoView(selector) {

@@ -133,7 +133,7 @@ p {
   font-weight: var(--weight-semi-bold);
   background-color: var(--color-bg-orange);
   color: var(--color-white);
-  padding: 10px 14px;
+  padding: 8px 14px;
   border-radius: var(--size-border-radius-circular);
 }
 
@@ -521,6 +521,29 @@ p {
   transform: scale(1.1);
   transition: all var(--annimation-duration) ease-in;
   color: var(--color-yellow);
+}
+
+/* Scroll - Arrow up */
+.arrow-up {
+  position: fixed;
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-hot-pink);
+  color: var(--color-white);
+  font-size: 40px;
+  transition: opacity var(--annimation-duration) ease-in;
+}
+
+.arrow-up.visible {
+  /* display: block; */
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
