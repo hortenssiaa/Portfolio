@@ -71,14 +71,12 @@ workBtnContainer.addEventListener('click', (e) => {
         return;
     }
 
-    // Change clicked category button color  
-    categoryBtnContainerArr.forEach((categoryBtn) => {
-        if (categoryBtn.dataset.filter === filter) {
-            categoryBtn.classList.add('active');
-        } else {
-            categoryBtn.classList.remove('active');
-        }
-    });
+    // Remove selection from the previous item and select the new one  
+    const selected = document.querySelector('.category__btn.selected');
+    selected.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected');
+
 
     // 다 보여지고난 다음에 (giving some times for anim-out)
     projectsContainer.classList.add("anim-out");
