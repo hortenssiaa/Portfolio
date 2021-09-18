@@ -68,6 +68,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Typography - 전반적인 패딩, 텍스트에 대해서 스타일*/
