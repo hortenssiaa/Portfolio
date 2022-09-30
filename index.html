@@ -11,11 +11,10 @@
 
     <script src="https://kit.fontawesome.com/dc8b0adc20.js" crossorigin="anonymous"></script>
     
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" 
-        rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -23,15 +22,16 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <i class="far fa-gem"></i>
-            <a href="#">Ha-Kyung</a>
+            <!--<i class="far fa-gem"></i>-->
+            <!-- <a href="#" class="navbar__name">Hakyung Sohn</a> -->
+            <a href="#" >Hakyung Sohn </a>
         </div>
         <!-- unordered list : ul -->
         <ul class="navbar__menu">
             <li class="navbar__menu__item" data-link="#home">Home</li>
              <li class="navbar__menu__item" data-link="#about">About</li>
             <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">My work</li>
+            <li class="navbar__menu__item" data-link="#work">Work</li>
             <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
         
@@ -48,11 +48,10 @@
             <!-- <span  class="home_avater_container"> -->
                 <img src="imgs/profile_2.jpg" alt="Hakyung's profile photo" class="home__avater">
                 <!-- </span> -->
-                <h1 class="home__title">Hello, <br/> I'm Dream Engineer. </h1>
-                <h2 class="home__description">A Full Stack Engineer who is going to residing in Tokyo, Japan.
-                </h2>
+                <h1 class="home__title">Hi, I'm Hakyung. </h1>
+                <h2 class="home__description">I'm a iOS developer. <br> Previously worked as a System engineer.</>
                 <!-- <h2 class="home__description">나를 나타낼 수 있는 최고의 문장 (강조하고픈 문장)</h2> -->
-                <button class="home__contact">Contact Me</button>
+                <!-- <button class="home__contact">Contact Me</button> -->
         </div>
     </section>
 
@@ -60,8 +59,8 @@
     <section id="about" class="section section_container">
         <h1>About me</h1>
         <p>
-            I like working with people :)<br>
-            To become a Full Stack Engineer, I've been working on Frontend & Backend projects.<br>
+            I like working with people.<br>
+            To become a iOS Developer, I've been working on Frontend & Backend projects.<br>
             Currently I'm working on a project "Bid & Auction Manager"!
         </p>
 
@@ -74,7 +73,7 @@
                 <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     <!-- 정확하게 어떤 것을 의미하는지 자세히 적어보기 -->
-                    HTML, CSS, JavaScript
+                    Swift, HTML, CSS, JavaScript
                 </div>
             </div>
             <div class="major">
@@ -84,7 +83,7 @@
                 <h2 class="major__title">Back-end</h2>
                 <div class="major__description">
                     <!-- 정확하게 어떤 것을 의미하는지 자세히 적어보기 -->
-                    Java, Python, R, Oracle RDBMS
+                    Java, Oracle DB, PostgreSQL, HADB
                 </div>
             </div>
             <div class="major">
@@ -94,7 +93,7 @@
                 <h2 class="major__title">Tools</h2>
                 <div class="major__description">
                     <!-- 정확하게 어떤 것을 의미하는지 자세히 적어보기 -->
-                    STS4, Linux, Docker, Git, GitHub 
+                    Xcode, STS4, Docker, Git, GitHub 
                 </div>
             </div>
         </div>
@@ -109,20 +108,46 @@
                 </div>
             </div>
             <div class="job">
-                <img src="imgs/jobs_schools/kita_black.png" alt="scit" class="job__logo jlogo2">
+                <img src="imgs/jobs_schools/capernwray-logo-white.svg" alt="capernwray" class="job__logo jlogo1">
                 <div class="job_discription">
-                    <p class="job__name">Studying Web Developing, Data Analysis and AI at KITA (Korea International Trade Association)</p>
-                    <div class="job__period">2021 Mar - 2021 Dec</div>
+                    <p class="job__name">Studied Bible & Christian Studies at Capernwray Bible School in U.K.</p>
+                    <div class="job__period">2018 Aug - 2019 Mar</div>
                 </div>
             </div>
             <div class="job">
-                <img src="imgs/jobs_schools/multicampus.png" alt="kangnam" class="job__logo jlogo3">
+                <img src="imgs/jobs_schools/Tauernhof_Logo_WHITE-SHADOW.png" alt="capernwray" class="job__logo jlogo1">
+                <div class="job_discription">
+                    <p class="job__name">Studied Bible & Christian Studies at Tauernhof Bible School in Austria</p>
+                    <div class="job__period">2019 May - 2019 Jun</div>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs_schools/multicampus.png" alt="multicampus" class="job__logo jlogo3">
                 <div class="job_discription">
                     <p class="job__name">Studied Java Programming and Web Developing at Multicampus</p>
                     <div class="job__period">2020 Jun - 2020 Aug</div>
                 </div>
             </div>
+            <div class="job">
+                <img src="imgs/jobs_schools/kita_black.png" alt="scit" class="job__logo jlogo2">
+                <div class="job_discription">
+                    <p class="job__name">Studied Japanese, Backend Web Developing Skills at KITA (Korea International Trade Association)</p>
+                    <div class="job__period">2021 Mar - 2021 Dec</div>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs_schools/ksinformation.png" alt="evo" class="job__logo jlogo2">
+                <div class="job_discription">
+                    <p class="job__name">Worked at ＫＳ情報システム (KS Information System) as a System developer</p>
+                    <div class="job__period">2022 Jan - 2022 Aug</div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section timeline">
+        <img src="/imgs/timeline.png" alt="" class="section_img timeline">
     </section>
 
     <!-- Skills -->
@@ -155,8 +180,8 @@
                     </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>PYTHON</span>
-                            <span>80%</span>
+                            <span>SWIFT</span>
+                            <span>70%</span>
                         </div>
     
                         <div class="skill__bar">
@@ -200,17 +225,16 @@
                     <div class="tools">
                         <h3 class="skillset__title">Tools</h3>
                         <ul class="tools__list">
+                            <li><span>Xcode</span></li>
                             <li><span>Spring Framework (STS4)</span></li>
                             <li><span>Eclipse</span></li>
-                            <li><span>Visual Studio</span></li>
-                            <li><span>Android Studio</span></li>
-                            <li><span>R Studio</span></li>
+                            <li><span>Visual Studio Code</span></li>
                         </ul>
                     </div>
                     <div class="etc">
                         <h3 class="skillset__title">Etc</h3>
                         <ul class="etc__list">
-                            <li><span>Git, GitHub</span></li>
+                            <li><span>Git / GitHub</span></li>
                             <li><span>Slack</span></li>
                             <!-- <li><span></span></li>
                             <li><span></span></li> -->
@@ -221,104 +245,423 @@
         </div>
     </section>
 
-    <!-- Work -->
-    <section id="work" class="section">
+    <section id="testimonials" class="section">
         <div class="section_container">
-            <h1>My work</h1>
-            <h3>Projects</h3>
-            <div class="work__categories">
-                <button class="category__btn selected" data-filter="*">All<span class="category__count">5</span></button>
-                <button class="category__btn" data-filter="front-end" >Front-end<span class="category__count">1</span></button>
-                <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">4</span></button>
-            </div>
-    
-            <div class="work__projects">
-                <a href="https://github.com/hortenssiaa/findmygym" class="project" target="blank" data-type="back-end">
-                    <img src="imgs/projects/pp2.png" alt="project 1" class="project__img">
-                    <div class="project__description">
-                        <h3>MyGym（マイジム探し）</h3>
-                        <span>Frontend & Backend Web Site</span>
-                    </div>
-                </a>
-                <a href="https://github.com/cqrita/animalhospitaldb" class="project" target="blank" data-type="back-end">
-                    <img src="imgs/projects/pp4.png" alt="Happy Pet" class="project__img">
-                    <div class="project__description">
-                        <h3>Happy Pet（ハッピーペット）</h3>
-                        <span>Backend Web Service</span>
-                    </div>
-                </a>
-                <a href="https://github.com/hortenssiaa/Portfolio" class="project" target="blank" data-type="front-end">
-                    <img src="imgs/projects/pp1.png" alt="project 3" class="project__img">
-                    <div class="project__description">
-                        <h3>Hakyung's Portfolio Web site</h3>
-                        <span>Hakyung's Portfolio with HTML, CSS and JS</span>
-                    </div>
-                </a>
-                <a href="https://github.com/hortenssiaa/Sobani" class="project" target="blank" data-type="back-end">
-                    <img src="imgs/projects/pp3.png" alt="ソバニ（Sobani）" class="project__img">
-                    <div class="project__description">
-                        <h3>ソバニ（Sobani）</h3>
-                        <span>Online Shop Program with Java</span>
-                    </div>
-                </a>
-                <a href="https://github.com/hortenssiaa/Bid_Auction_Manager" class="project" target="blank" data-type="back-end">
-                    <img src="imgs/projects/pp3.png" alt="Bid & Auction Manager" class="project__img">
-                    <div class="project__description">
-                        <h3>Bid & Auction Manager</h3>
-                        <span>Backend Web Service</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+            <h1>Work</h1>
+        <h3>Projects</h3>
 
-    <!-- Testimonials -->
-    <!-- <section id="testimonials" class="section">
-        <div class="section_container">
-            <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-            <div class="testimonial testimonial1">
-                <img src="imgs/testimonials/person1.png" alt="person1" class="testimonial__avata">
-                <div class="testimonial__speech-bubble">
-                    <p>
-                        Ha Kyung es un compañero verdaderamente brillante y capaz de hacer 
-                        joyas. Este amigo es realmente honesto, sincero e interesado en la 
-                        tecnología. Realmente disfruto trabajar con este amigo. 
-                        Ver a este amigo de un lado a otro tiene mucho entusiasmo, 
-                        y lo que he aprendido es que me inspira.
-                    </p>
-                    <p class="name">
-                        <a href="">Ellie</a>
-                        / Samsung
-                    </p>
+        <div class="slidedown__container">
+            <div class="slidedown__items">
+                <div class="slidedown__item item1">
+                    <img src="imgs/projects/JR-West.jpeg" alt="work1" class="slidedown__img work__img1">
+                    <div class="slidedown__description work__description1">
+                        <p class="slidedown__description__title">
+                            JR西日本 ー Backend Development
+                        </p>
+                        <p class="slidedown__description__content">
+                            An Analysis System Development project
+                        </p>
+                    </div>
+                </div>    
+                <div class="slidedown__icon__container">
+                    <div class="slidedown__item__downw">
+                        <details>
+                            <summary>
+                                <button class="slidedown__item__down button">
+                                    <i class="fa fa-angle-down" aria-hidden="true" ></i>
+                                </button>
+                            </summary>
+                            <div class="slidedown__detailes__container">
+                                <div class="slidedown__detailes__description">
+                                    <h4 class="slidedown__detailes__description__title title1">
+                                        Client,&nbsp Agency,&nbsp  Year,&nbsp  Duration
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts">
+                                        Japan Rails - West Japan,&nbsp LG Hitachi,&nbsp 2022,&nbsp 7 months
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Role
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        Server-side Developer 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Skills
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        Java 8,&nbsp JSF,&nbsp HADB,&nbsp Elastic Search,&nbsp Eclipse
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Team
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        9 people
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Background
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        I joined the LG Hitachi Solution Service team in South Korea as an offshore member 
+                                        of the Japanese project.
+                                        This project is about improving existing JR Analysis System and 
+                                        developing new features.
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Overview
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts">
+                                        I've joined the LG Hitachi Solution Service team in South Korea as an offshore member 
+                                        of the Japanese project.
+                                        Not only done programming, but also learned how to deal with ambiguity in client requirements. 
+                                    </span>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial testimonial2">
-                <div class="testimonial__speech-bubble">
-                    <p>
-                        Ha Kyung es un compañero verdaderamente brillante y capaz de hacer 
-                        joyas. Este amigo es realmente honesto, sincero e interesado en la 
-                        tecnología. Realmente disfruto trabajar con este amigo. 
-                        Ver a este amigo de un lado a otro tiene mucho entusiasmo, 
-                        y lo que he aprendido es que me inspira.
-                    </p>
-                    <p class="name">
-                        <a href="">Ellie</a>
-                        / Samsung
-                    </p>
+
+            <div class="slidedown__items">
+                <div class="slidedown__item item2">
+                    <img src="imgs/projects/mygym.png" alt="work2" class="slidedown__img work__img2">
+                    <div class="slidedown__description work__description2">
+                        <p class="slidedown__description__title">
+                            마이짐 ー Frontend & Backend Development
+                        </p>
+                        <p class="slidedown__description__content">
+                            Webservice to provide location of public exercise equipment
+                        </p>
+                    </div>
+                </div>    
+                <div class="slidedown__icon__container">
+                    <div class="slidedown__item__downw">
+                        <details>
+                            <summary>
+                                <button class="slidedown__item__down button">
+                                    <i class="fa fa-angle-down" aria-hidden="true" ></i>
+                                </button>
+                            </summary>
+                            <div class="slidedown__detailes__container">
+                                <div class="slidedown__detailes__description">
+                                    <img src="/imgs/projects/project_findmygym.png" alt="findmygym">
+                                    <h4 class="slidedown__detailes__description__title title1">
+                                        Client,&nbsp Duration
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts">
+                                        Personal,&nbsp 6 months
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Role
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        UX/UI,&nbsp Frontend & Backend Development 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Skills
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        HTML, CSS, Javascript, Java 8,&nbsp JSP,&nbsp Oracle DB,&nbsp STS4,&nbsp Kakao Maps API 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Background
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        I've joined the LG Hitachi Solution Service team in South Korea as a Backend Developer. 
+                                        This project is about improving existing JR Analysis System and 
+                                        developing new features.
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Overview
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts5">
+
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Demo
+                                    </h4>
+                                    <iframe width="420" height="260" src="https://www.youtube.com/embed/Nd1hJHpVQPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        URL
+                                    </h4>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-                <img src="imgs/testimonials/person1.png" alt="person1" class="testimonial__avata">
+            </div>
+
+            <div class="slidedown__items">
+                <div class="slidedown__item item3">
+                    <img src="imgs/projects/pp1.png" alt="work3" class="slidedown__img work__img3">
+                    <div class="slidedown__description work--description1">
+                        <p class="slidedown__description__title">
+                            Hakyung's Portfolio Website ー Frontend Development
+                        </p>
+                        <p class="slidedown__description__content">
+                            Personal Portfolio Website
+                        </p>
+                    </div>
+                </div>    
+                <div class="slidedown__icon__container">
+                    <div class="slidedown__item__downw">
+                        <details>
+                            <summary>
+                                <button class="slidedown__item__down button">
+                                    <i class="fa fa-angle-down" aria-hidden="true" ></i>
+                                </button>
+                            </summary>
+                            <div class="slidedown__detailes__container">
+                                <div class="slidedown__detailes__description">
+                                    <h4 class="slidedown__detailes__description__title title1">
+                                        Client,&nbsp Duration
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts">
+                                        Personal,&nbsp 3 months
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Role
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        UX/UI,&nbsp Frontend Development 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Skills
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        HTML, CSS, Javascript, VSCode
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Background
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        I've joined the LG Hitachi Solution Service team in South Korea as a Backend Developer. 
+                                        This project is about improving JR Analysis System and 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Overview
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts5">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slidedown__items">
+                <div class="slidedown__item item4">
+                    <img src="imgs/projects/project_animal4.png" alt="work4" class="slidedown__img work__img4">
+                    <div class="slidedown__description work__description4">
+                        <p class="slidedown__description__title">
+                            Mypet Website ー Backend Development
+                        </p>
+                        <p class="slidedown__description__content">
+                            Providing location of animal hospital & pharmacy
+                        </p>
+                    </div>
+                </div>    
+                <div class="slidedown__icon__container">
+                    <div class="slidedown__item__downw">
+                        <details>
+                            <summary>
+                                <button class="slidedown__item__down button">
+                                    <i class="fa fa-angle-down" aria-hidden="true" ></i>
+                                </button>
+                            </summary>
+                            <div class="slidedown__detailes__container">
+                                <div class="slidedown__detailes__description">
+                                    <!-- <iframe width="420" height="260" src="https://www.youtube.com/embed/Nd1hJHpVQPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                    <h4 class="slidedown__detailes__description__title title1">
+                                        Client,&nbsp Agency,&nbsp  Year,&nbsp  Duration
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts">
+                                        Japan Rails - West Japan,&nbsp LG Hitachi,&nbsp 2022,&nbsp 7 months
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Role
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        Server-side Developer 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Skills
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        HTML, CSS, Javascript, VSCode
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Team
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        9 person
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Background
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        I've joined the LG Hitachi Solution Service team in South Korea as a Backend Developer. 
+                                        This project is about improving JR Analysis System and 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Overview
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts5">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slidedown__items">
+                <div class="slidedown__item item5">
+                    <img src="imgs/projects/project_shareseoul.png" alt="work5" class="slidedown__img work__img5">
+                    <div class="slidedown__description work__description5">
+                        <p class="slidedown__description__title">
+                            Share Seoul ー Frontend Development
+                        </p>
+                        <p class="slidedown__description__content">
+                            Developing and maintenancing Analysis System
+                        </p>
+                    </div>
+                </div>    
+                <div class="slidedown__icon__container">
+                    <div class="slidedown__item__downw">
+                        <details>
+                            <summary>
+                                <button class="slidedown__item__down button">
+                                    <i class="fa fa-angle-down" aria-hidden="true" ></i>
+                                </button>
+                            </summary>
+                            <div class="slidedown__detailes__container">
+                                <div class="slidedown__detailes__description">
+                                    <!-- <iframe width="420" height="260" src="https://www.youtube.com/embed/Nd1hJHpVQPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                    <h4 class="slidedown__detailes__description__title title1">
+                                        Client,&nbsp Agency,&nbsp  Year,&nbsp  Duration
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts">
+                                        Japan Rails - West Japan,&nbsp LG Hitachi,&nbsp 2022,&nbsp 7 months
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Role
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        Server-side Developer 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Skills
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        HTML, CSS, Javascript, VSCode
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Team
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        9 person
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Background
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        I've joined the LG Hitachi Solution Service team in South Korea as a Backend Developer. 
+                                        This project is about improving JR Analysis System and 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Overview
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts5">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slidedown__items">
+                <div class="slidedown__item item4">
+                    <img src="imgs/projects/project_helepathy.png"" alt="work6" class="slidedown__img work__img6">
+                    <div class="slidedown__description work__description6">
+                        <p class="slidedown__description__title">
+                            Hel-epathy ー Planning
+                        </p>
+                        <p class="slidedown__description__content">
+                            Home-teaching matching Application for colleage students and handicaped children.
+                        </p>
+                    </div>
+                </div>    
+                <div class="slidedown__icon__container">
+                    <div class="slidedown__item__downw">
+                        <details>
+                            <summary>
+                                <button class="slidedown__item__down button">
+                                    <i class="fa fa-angle-down" aria-hidden="true" ></i>
+                                </button>
+                            </summary>
+                            <div class="slidedown__detailes__container">
+                                <div class="slidedown__detailes__description">
+                                    <!-- <iframe width="420" height="260" src="https://www.youtube.com/embed/Nd1hJHpVQPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                    <h4 class="slidedown__detailes__description__title title1">
+                                        Client,&nbsp Agency,&nbsp  Year,&nbsp  Duration
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts">
+                                        Japan Rails - West Japan,&nbsp LG Hitachi,&nbsp 2022,&nbsp 7 months
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Role
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        Server-side Developer 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Skills
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        HTML, CSS, Javascript, VSCode
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Team
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        9 person
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Background
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts">
+                                        I've joined the LG Hitachi Solution Service team in South Korea as a Backend Developer. 
+                                        This project is about improving JR Analysis System and 
+                                    </span>
+                                    <h4 class="slidedown__detailes__description__title title">
+                                        Overview
+                                    </h4>
+                                    <span class="slidedown__detailes__description__cnts cnts5">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </section> -->
+    </section> 
+
 
     <!-- Contact -->
-    <section id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">hortenssiaa@gmail.com</h2>
+    <section id="contact" class="section contact">
+        <!-- <h1 class="contact__title">Let's talk</h1> -->
+        <p class="contact__rights">
+            ©2022 <span class="contact__rights__style">Hakyung Sohn</span> - All Rights Reserved.
+        </p>
         <div class="contact__links">
+            <span class="contact__email">hortenssiaa@gmail.com</span>
             <a href="https://github.com/hortenssiaa" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
@@ -326,9 +669,6 @@
                 <i class="fab fa-linkedin"></i>
             </a>
         </div>
-        <p class="contact__rights">
-            2021 Hortenssiaa Hakyung Sohn - All rights reserved
-        </p>
     </section>
 
     <!--Arrow Up-->
