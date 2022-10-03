@@ -711,6 +711,14 @@ img.slidedown__img.work__img4 {
   font-weight: var(--weight-regular);
 }
 
+.slidedown__detailes__description__cnts.seecodehere a {
+  color: var(--color-black);
+}
+
+.slidedown__detailes__description__cnts.seecodehere a:hover {
+  text-decoration: underline;
+}
+
 .slidedown__detailes__description__title.title {
   margin-top: 45px;
 }
